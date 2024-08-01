@@ -32,6 +32,11 @@
   color: rgb(160, 0, 0);
 }
 
+.buttonsContainer tr:first-child td:first-child button:hover {
+  color: rgb(199, 0, 0);
+  background-color: rgb(189, 189, 189);
+}
+
 .buttonsContainer tr:first-child td button {
   background-color: rgb(171, 171, 171);
   color: black;
@@ -43,5 +48,9 @@
 }
 
 .buttonsContainer tr:last-child td:last-child button {
+  background-color: rgba(230, 150, 0, 0.999);
+}
+
+.buttonsContainer tr:last-child td:last-child button:hover {
   background-color: orange;
 }

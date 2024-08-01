@@ -1,15 +1,13 @@
 .display {
   outline: none;
-  /* border: 1px solid rgba(0, 0, 0, 0.5); */
-  /* border-radius: 5px; */
   margin: 45px 10px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgb(0, 0, 0);
 }
 
 .opertaion {
+  background-color: rgb(42, 42, 42);
   font-size: 18px;
   outline: none;
   border: none;
@@ -21,10 +19,12 @@
 }
 
 .result {
+  background-color: rgb(42, 42, 42);
   font-size: 40px;
   font-weight: 500;
   outline: none;
   border: none;
   text-align: end;
   color: white;
+  padding-inline: 10px;
 }

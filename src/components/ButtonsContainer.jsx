@@ -7,57 +7,129 @@ import { LuPercent } from "react-icons/lu";
 import { FaEquals } from "react-icons/fa6";
 import styles from "./ButtonsContainer.module.css";
 
-const ButtonsContainer = () => {
+const ButtonsContainer = ({ onButtonClick }) => {
+  /*   const buttonsName = [
+    "C",
+    "1",
+    "2",
+    "+",
+    "3",
+    "4",
+    "-",
+    "5",
+    "6",
+    "*",
+    "7",
+    "8",
+    "/",
+    "9",
+    "0",
+    ".",
+    "=",
+  ]; */
+
   return (
     <div>
       <table className={styles.buttonsContainer}>
         <tr>
           <td>
-            <button className={styles.button}>C</button>
+            <button
+              className={styles.button}
+              onClick={() => onButtonClick("C")}
+            >
+              C
+            </button>
           </td>
           <td>
-            <button className={styles.button}>
+            <button
+              className={styles.button}
+              onClick={() => onButtonClick("DEL")}
+            >
               <TiBackspaceOutline />
             </button>
           </td>
           <td>
-            <button className={styles.button}>
+            <button
+              className={styles.button}
+              onClick={() => onButtonClick("%")}
+            >
               <LuPercent />
             </button>
           </td>
           <td>
-            <button className={styles.button}>
+            <button
+              className={styles.button}
+              onClick={() => onButtonClick("/")}
+            >
               <FaDivide />
             </button>
           </td>
         </tr>
         <tr>
           <td>
-            <button className={styles.button}>7</button>
+            <button
+              className={styles.button}
+              onClick={() => onButtonClick("7")}
+            >
+              7
+            </button>
           </td>
           <td>
-            <button className={styles.button}>8</button>
+            <button
+              className={styles.button}
+              onClick={() => onButtonClick("8")}
+            >
+              8
+            </button>
           </td>
           <td>
-            <button className={styles.button}>9</button>
+            <button
+              className={styles.button}
+              onClick={() => onButtonClick("9")}
+            >
+              9
+            </button>
           </td>
           <td>
-            <button className={styles.button}>x</button>
+            <button
+              className={styles.button}
+              onClick={() => onButtonClick("*")}
+            >
+              x
+            </button>
           </td>
         </tr>
 
         <tr>
           <td>
-            <button className={styles.button}>4</button>
+            <button
+              className={styles.button}
+              onClick={() => onButtonClick("4")}
+            >
+              4
+            </button>
           </td>
           <td>
-            <button className={styles.button}>5</button>
+            <button
+              className={styles.button}
+              onClick={() => onButtonClick("5")}
+            >
+              5
+            </button>
           </td>
           <td>
-            <button className={styles.button}>6</button>
+            <button
+              className={styles.button}
+              onClick={() => onButtonClick("6")}
+            >
+              6
+            </button>
           </td>
           <td>
-            <button className={styles.button}>
+            <button
+              className={styles.button}
+              onClick={() => onButtonClick("-")}
+            >
               <RiSubtractLine />
             </button>
           </td>
@@ -65,16 +137,34 @@ const ButtonsContainer = () => {
 
         <tr>
           <td>
-            <button className={styles.button}>1</button>
+            <button
+              className={styles.button}
+              onClick={() => onButtonClick("1")}
+            >
+              1
+            </button>
           </td>
           <td>
-            <button className={styles.button}>2</button>
+            <button
+              className={styles.button}
+              onClick={() => onButtonClick("2")}
+            >
+              2
+            </button>
           </td>
           <td>
-            <button className={styles.button}>3</button>
+            <button
+              className={styles.button}
+              onClick={() => onButtonClick("3")}
+            >
+              3
+            </button>
           </td>
           <td>
-            <button className={styles.button}>
+            <button
+              className={styles.button}
+              onClick={() => onButtonClick("+")}
+            >
               <IoMdAdd />
             </button>
           </td>
@@ -82,13 +172,26 @@ const ButtonsContainer = () => {
 
         <tr>
           <td>
-            <button className={styles.button}>0</button>
+            <button
+              className={styles.button}
+              onClick={() => onButtonClick("0")}
+            >
+              0
+            </button>
           </td>
           <td>
-            <button className={styles.button}>.</button>
+            <button
+              className={styles.button}
+              onClick={() => onButtonClick(".")}
+            >
+              .
+            </button>
           </td>
           <td>
-            <button className={styles.button}>
+            <button
+              className={styles.button}
+              onClick={() => onButtonClick("=")}
+            >
               <FaEquals />
             </button>
           </td>
