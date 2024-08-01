@@ -1,0 +1,47 @@
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* background-color: blueviolet; */
+  margin-bottom: 20px;
+}
+
+.button {
+  color: white;
+  width: 45px;
+  height: 45px;
+  font-weight: 500;
+  font-size: 20px;
+  margin: 5px;
+  border-radius: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  background-color: rgb(61, 61, 61);
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button:active {
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  opacity: 0.9;
+}
+
+.buttonsContainer tr:first-child td:first-child button {
+  color: rgb(160, 0, 0);
+}
+
+.buttonsContainer tr:first-child td button {
+  background-color: rgb(171, 171, 171);
+  color: black;
+}
+
+.buttonsContainer tr td:last-child button {
+  background-color: rgba(255, 166, 0, 0.727);
+  color: black;
+}
+
+.buttonsContainer tr:last-child td:last-child button {
+  background-color: orange;
+}
