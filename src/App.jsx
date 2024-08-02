@@ -18,14 +18,10 @@ const App = () => {
       // setCalVal(result);
       setFinalVal(result);
     } else if (buttonText === "DEL") {
-      /* const key = buttonText.key;
-      if (
-        key === "Backspace" ||
-        key === "Delete" ||
-        (key.ctrlKey && key.key === "z")
-      ) {
-        return;
-      } */
+      setCalVal(calVal.slice(0, -1));
+    } else if (buttonText === "%") {
+      const result = calVal / 100;
+      setFinalVal(result);
     } else {
       const newDisplayValue = calVal + buttonText;
       setCalVal(newDisplayValue);

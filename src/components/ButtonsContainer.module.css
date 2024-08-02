@@ -23,9 +23,13 @@
   align-items: center;
 }
 
+.button:hover {
+  opacity: 0.87;
+}
+
 .button:active {
   /* background-color: rgba(0, 0, 0, 0.1); */
-  opacity: 0.9;
+  opacity: 0.99;
 }
 
 .buttonsContainer tr:first-child td:first-child button {
@@ -34,7 +38,12 @@
 
 .buttonsContainer tr:first-child td:first-child button:hover {
   color: rgb(199, 0, 0);
-  background-color: rgb(189, 189, 189);
+  background-color: rgb(211, 211, 211);
+}
+
+.buttonsContainer tr:first-child td:first-child button:active {
+  color: rgb(199, 0, 0);
+  background-color: rgb(198, 198, 198);
 }
 
 .buttonsContainer tr:first-child td button {
@@ -51,6 +60,42 @@
   background-color: rgba(230, 150, 0, 0.999);
 }
 
-.buttonsContainer tr:last-child td:last-child button:hover {
+/* .buttonsContainer tr:last-child td:last-child button:hover {
   background-color: orange;
+} */
+
+.buttonsContainer tr:last-child td:last-child {
+  width: 95px;
+  background-color: rgba(255, 166, 0, 0.727);
+  border-radius: 15%;
+}
+
+.buttonsContainer tr:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonsContainer tr:last-child td:last-child {
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.buttonsContainer tr:last-child td:last-child:hover {
+  opacity: 0.87;
+}
+
+.buttonsContainer tr:last-child td:last-child:active {
+  opacity: 0.99;
+}
+
+.buttonsContainer tr:last-child td:last-child button {
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
 }

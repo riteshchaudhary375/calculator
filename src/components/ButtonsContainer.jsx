@@ -29,8 +29,9 @@ const ButtonsContainer = ({ onButtonClick }) => {
   ]; */
 
   return (
-    <div>
-      <table className={styles.buttonsContainer}>
+    // <div>
+    <table>
+      <tbody className={styles.buttonsContainer}>
         <tr>
           <td>
             <button
@@ -52,6 +53,7 @@ const ButtonsContainer = ({ onButtonClick }) => {
             <button
               className={styles.button}
               onClick={() => onButtonClick("%")}
+              // onClick={handlePercent}
             >
               <LuPercent />
             </button>
@@ -196,8 +198,9 @@ const ButtonsContainer = ({ onButtonClick }) => {
             </button>
           </td>
         </tr>
-      </table>
-    </div>
+      </tbody>
+    </table>
+    // </div>
   );
 };
 
